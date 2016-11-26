@@ -1,0 +1,22 @@
+SocketTest - Test My Socket
+Este software serve para testar as portas (sockets) abertas em uma rede e ainda
+conectar nelas e enviar mensagems.
+
+o Problema: saber meu ip real para poder testar a porta, tenho que ir ao site http://meuip.ciasc.gov.br/
+e então descobrir a porta e copiá-la
+
+a Melhoria: um botão foi adicionado e, ao passo de um clique o usuário descobre seu IP real
+
+As alterações são para permitir que este software muito útil se torne mais ainda
+as melhorias consistem em permitir que caso o computador esteja conectado à internet
+o software descobre o IP real e atribui ao campo do ip. Para isso o software conecta
+a um site que informa o ip da máquina, baixa o arquivo, lê e descobre o ip nesse aquivo,
+a funçao que faz isso e o botão estão no arquivo /src/net/sf/sockettest/swing/SocketTestClient.java
+linha 490.
+
+a versão original deste software pode ser encontrada em https://sourceforge.net/p/sockettest/code/HEAD/tree/
+
+para executar o software e testar basta executar o comando:
+java -jar {PASTA ONDE ESTA ESTE ARQUIVO}/dist/SocketTest.jar
+
+
